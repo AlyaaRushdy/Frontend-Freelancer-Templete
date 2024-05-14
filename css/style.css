@@ -1,0 +1,60 @@
+/* || VARIABLES */
+:root {
+  /* || COLORS */
+  --prim-navy-blue: #2c3e50;
+  --sec-teal: #1abc9c;
+  --regular-font-size: clamp(
+    1.25rem,
+    calc(1.25rem + ((1vw - 0.48rem) * 0.3472)),
+    1.5rem
+  );
+  --h1-font-size: clamp(2.75rem, calc(2.75rem + ((1vw - 0.2rem) * 1.25)), 4rem);
+  --h2-font-size: clamp(
+    2.25rem,
+    calc(2.25rem + ((1vw - 0.48rem) * 1.0417)),
+    3rem
+  );
+  scroll-behavior: smooth;
+}
+
+/* || RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+/* ||UTILITY CLASSES */
+.uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: 600;
+}
+.color-white {
+  color: white;
+  fill: white;
+}
+.color-primary {
+  color: var(--prim-navy-blue);
+  fill: var(--prim-navy-blue);
+}
+.bg-white {
+  background-color: white;
+}
+.bg-primary {
+  background-color: var(--prim-navy-blue);
+}
+/* .bg-secondary {
+  background-color: var(--sec-teal);
+} */
+.text-center {
+  text-align: center;
+}
