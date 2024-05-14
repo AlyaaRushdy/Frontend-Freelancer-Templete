@@ -65,7 +65,7 @@ body {
 }
 .content-grid {
   display: grid;
-  grid-template-columns: [full-width-start] 10vw [content-start] 1fr [content-end] 10vw [full-width-end];
+  grid-template-columns: [full-width-start] 7.5vw [content-start] minmax(0, 1fr) [content-end] 7.5vw [full-width-end];
 }
 .content-grid > * {
   grid-column: content;
@@ -106,12 +106,9 @@ h2 {
   top: 0;
   left: 0;
   min-width: 100%;
-  background-color: var(--prim-navy-blue);
   padding: 1.5rem 0;
 }
 .navbar {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -145,4 +142,24 @@ h2 {
 }
 .section--hero__p {
   font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.48rem) * 0.3472)), 1.5rem);
+}
+
+.section--portfolio {
+  padding-left: 0;
+  padding-right: 0;
+}
+.section--portfolio > * {
+  margin-bottom: 1rem;
+}
+.images-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+.portfolio__img {
+  width: clamp(18rem, 60vw, 23rem);
+  border-radius: 1rem;
 }
