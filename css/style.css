@@ -58,3 +58,44 @@ ol {
 .text-center {
   text-align: center;
 }
+
+/* ||General Styling */
+body {
+  font-family: "Montserrat", Arial, "Noto Sans", sans-serif;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: [full-width-start] 10vw [content-start] 1fr [content-end] 10vw [full-width-end];
+}
+.content-grid > * {
+  grid-column: content;
+}
+.content-grid > .full-width {
+  grid-column: full-width;
+}
+.section {
+  min-height: 100vh;
+  padding: 6.5rem 1rem 5rem;
+}
+h1 {
+  font-size: var(--h1-font-size);
+}
+h2 {
+  font-size: var(--h2-font-size);
+}
+.star-divider {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.divider {
+  width: clamp(5rem, 35%, 7rem);
+  height: 5px;
+  border-radius: 1rem;
+}
+.star {
+  width: 40px;
+}
