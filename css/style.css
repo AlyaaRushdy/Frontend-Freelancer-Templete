@@ -153,3 +153,34 @@ h2 {
   width: clamp(18rem, 60vw, 23rem);
   border-radius: 1rem;
 }
+
+/* About Section */
+.section--about {
+  justify-content: center;
+  align-content: center;
+}
+.about__div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.75rem;
+}
+.section--about p {
+  font-size: var(--regular-font-size);
+  line-height: 1.5;
+  max-width: 25rem;
+}
+.about__a {
+  color: white;
+  font-size: var(--regular-font-size);
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  border: 1px white solid;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+.about__a svg {
+  color: white;
+  width: 20px;
+  margin-right: 5px;
+}
