@@ -75,7 +75,7 @@ body {
 }
 .section {
   min-height: 100vh;
-  padding: 6.5rem 1rem 5rem;
+  padding: 6rem 1rem 5rem;
 }
 h1 {
   font-size: var(--h1-font-size);
