@@ -52,9 +52,9 @@ ol {
 .bg-primary {
   background-color: var(--prim-navy-blue);
 }
-/* .bg-secondary {
+.bg-secondary {
   background-color: var(--sec-teal);
-} */
+}
 .text-center {
   text-align: center;
 }
@@ -75,7 +75,11 @@ body {
 }
 .section {
   min-height: 100vh;
-  padding: 6rem 1rem 5rem;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+.section > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 h1 {
   font-size: var(--h1-font-size);
@@ -129,35 +133,21 @@ h2 {
 }
 
 /* Hero Section */
-.section--hero {
-  background-color: var(--sec-teal);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.75rem;
-}
 .section--hero__img {
   width: 240px;
+  justify-self: center;
 }
 .section--hero__p {
   font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.48rem) * 0.3472)), 1.5rem);
 }
 
-.section--portfolio {
-  padding-left: 0;
-  padding-right: 0;
-}
-.section--portfolio > * {
-  margin-bottom: 1rem;
-}
+/* Portfolio Section */
 .images-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  margin-top: 1.75rem;
 }
 .portfolio__img {
   width: clamp(18rem, 60vw, 23rem);
