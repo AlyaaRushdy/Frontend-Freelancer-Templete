@@ -99,3 +99,34 @@ h2 {
 .star {
   width: 40px;
 }
+
+/* Nav Bar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  background-color: var(--prim-navy-blue);
+  padding: 1.5rem 0;
+}
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.logo {
+  font-size: var(--regular-font-size);
+  text-align: center;
+}
+.navbar__ul {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar__ul a:hover {
+  color: var(--sec-teal);
+}
