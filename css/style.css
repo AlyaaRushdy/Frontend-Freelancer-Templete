@@ -130,3 +130,19 @@ h2 {
 .navbar__ul a:hover {
   color: var(--sec-teal);
 }
+
+/* Hero Section */
+.section--hero {
+  background-color: var(--sec-teal);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+.section--hero__img {
+  width: 240px;
+}
+.section--hero__p {
+  font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.48rem) * 0.3472)), 1.5rem);
+}
