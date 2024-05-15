@@ -180,7 +180,11 @@ h2 {
   justify-self: center;
 }
 .about__a svg {
-  color: white;
   width: 20px;
   margin-right: 5px;
+}
+.about__a:hover {
+  color: black;
+  background-color: white;
+  border: 1px white solid;
 }
