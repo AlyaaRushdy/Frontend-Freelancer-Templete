@@ -3,6 +3,8 @@ const headerHeight = document.getElementById("header").offsetHeight;
 const imageContainer = document.getElementById("images-container");
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav__a");
+const navButton = document.getElementsByClassName("navbar__button")[0];
+const navMenu = document.getElementById("navMenu");
 let imgNamesList = [
   "cabin.png",
   "cake.png",
@@ -39,3 +41,14 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// menu toggler
+if (window.visualViewport.width <= 991) {
+  window.addEventListener("click", (event) => {
+    if (event.target === navButton) {
+      navMenu.classList.toggle("verticle-menu");
+    } else if (navMenu.classList.contains("verticle-menu")) {
+      navMenu.classList.remove("verticle-menu");
+    }
+  });
+}
