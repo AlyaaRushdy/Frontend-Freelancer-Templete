@@ -132,10 +132,22 @@ h2 {
   font-size: 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
-.navbar__ul a:hover {
+.nav__a {
+  padding: 1rem;
+}
+.nav__a:hover {
   color: var(--sec-teal);
+}
+.active {
+  background-color: var(--sec-teal);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+}
+.active:hover {
+  color: white;
 }
 
 /* Hero Section */
