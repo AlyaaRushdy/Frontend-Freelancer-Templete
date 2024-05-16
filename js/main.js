@@ -15,6 +15,11 @@ let imgNamesList = [
 ];
 let imageElements = "";
 
+document.documentElement.style.setProperty(
+  "--header-height",
+  `${headerHeight}px`
+);
+
 // adding images to portfolio section
 imgNamesList.forEach((img) => {
   const imgElement = new Image();
